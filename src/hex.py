@@ -18,5 +18,5 @@ match command:
 
     case "decode":
         # Implement the decoding here
-        decoding = ''.join(chr(int(a, base=16)) for a in x.split('0x'))
+        decoding = ''.join(chr(int(a, base=16)) for a in x.split('0x')[1:])
         print(decoding)
