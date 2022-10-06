@@ -13,7 +13,7 @@ command, x = sys.argv[1:3]
 match command:
     case "encode":
         # Implement the encoding here
-        encoding = ""
+        encoding = "".join(hex(ord(a)) for a in x)
         print(encoding)
 
     case "decode":
